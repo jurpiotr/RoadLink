@@ -10,5 +10,41 @@
 </head>
 <body>
   <app-root></app-root>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/style.js"></script>
+  <script>
+    $('#carOousel').carousel()
+  </script>
+
+<script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFjL03hTLhsDxHC57aIRqjfb-7P8BG_zQ&callback=initMap"
+  async defer></script>
+  <script>
+  $(window).on("scroll", function() {
+     let scrollTop = $(window).scrollTop();
+
+     if (scrollTop > 90) {
+       $("#navigation").addClass("nav-changer");
+       $("#navigation").removeClass("nav-init");
+     } else {
+       $("#navigation").addClass("nav-init");
+       $("#navigation").removeClass("nav-changer");
+     }
+
+   });
+
+
+  </script>
+
 </body>
 </html>

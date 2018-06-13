@@ -1,0 +1,208 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 0, 0);
+  position: relative;
+  overflow-x: hidden;
+}
+h1{
+ color: rgb(229, 255, 0);
+ text-align: center;
+ text-shadow: 0 0 8px rgb(229, 255, 0);
+}
+.nav-changer{
+  background: rgba(255, 225, 0, 0.8);
+  border: 3px solid rgb(208, 208, 208);
+  box-shadow: 0 0 14px rgb(43, 43, 43);
+  border-radius: 10px;
+  transform: scale(0.95);
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.nav-init{
+  background: rgba(255, 225, 0, 1);
+  border-top: 3px solid rgb(208, 208, 208);
+  border-bottom: 3px solid rgb(208, 208, 208);
+  box-shadow: 0 0 5px rgb(43, 43, 43);
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+header a{
+  color: rgb(0, 0, 0) !important;
+  font-family: 'Cabin Sketch', Arial;
+  font-size: 18px;
+}
+header a.navbar-brand{
+ padding: 0px 20px;
+ font-size: 40px;
+}
+.navbar-toggler-icon{
+ color: rgb(55, 55, 55);
+
+}
+header#navigation .nav-item{
+  padding: 0 10px;
+}
+.dropdown-menu{
+ background: rgb(238, 255, 89);
+}
+
+
+#carousel-gallery{
+ z-index: 1;
+}
+#carOousel{
+ z-index: 1;
+}
+
+.sections{
+ z-index: 0;
+ overflow: hidden;
+}
+div.sections section:first-child > div{
+ padding: 15% 0 15% !important;
+}
+div.sections section:last-child > div{
+ padding: 7% 0 22% !important;
+}
+.odd-section{
+ z-index: 0;
+ position: relative;
+ text-align: center;
+}
+.odd-section .full-oferta{
+ position: relative;
+ margin: -10% 0;
+ padding: 7% 0 15%;
+ left: -10%;
+ width: 120%;
+ box-shadow: 0px 0px 50px rgb(0, 0, 0), inset 0px 5px 10px rgb(178, 255, 163);
+ transform: rotate(3deg);
+background: -moz-linear-gradient(top, rgb(89, 198, 35) 0%, rgb(36, 166, 0) 100%);
+background: -webkit-linear-gradient(top, rgb(89, 198, 35) 0%,rgb(36, 166, 0) 100%);
+background: linear-gradient(to bottom,rgb(107, 226, 48) 0%,rgb(36, 166, 0) 100%);
+
+}
+.odd-section .container{
+ transform: rotate(-3deg);
+}
+.even-section{
+ z-index: 0;
+ position: relative;
+}
+.even-section .full-oferta2{
+ position: relative;
+ margin: -10% 0;
+ padding: 7% 0% 15%;
+ left: -14%;
+ width: 130%;
+ text-align: center;
+ box-shadow: 0px 0px 50px rgb(0, 0, 0), inset 0px 5px 10px rgb(136, 187, 255);
+ transform: rotate(-3deg);
+background: -moz-linear-gradient(top, rgba(17,135,214,1) 0%, rgb(0, 21, 157) 100%);
+background: -webkit-linear-gradient(top,rgba(17,135,214,1) 0%,rgb(0, 21, 157) 100%);
+background: linear-gradient(to bottom,rgba(17,135,214,1) 0%,rgb(0, 21, 157) 100%);
+}
+.text-mobile{
+ padding: 10px;
+ color: rgb(255, 255, 255);
+}
+.even-section .container{
+ transform: rotate(3deg);
+}
+
+.download-app{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10px auto;
+  box-shadow: inset 0px 0px 8px rgb(111, 111, 111);
+  border-radius: 15px;
+  background: rgb(252, 249, 235);
+}
+.flex-item{
+  max-height: 40px;
+  padding: 8px 0;
+}
+
+footer{
+ position: relative;
+ color: white;
+ padding-left: 30px;
+ text-align: center;
+}
+
+footer .full-footer{
+ position: relative;
+ margin: -5% 0 0%;    padding: 7% 15% 0%;
+ left: -20%;
+ width: 130%;
+ background: rgb(255, 0, 0);
+ background: -moz-linear-gradient(top, rgb(124, 124, 124) 0%, rgb(0, 0, 0) 100%);
+ background: -webkit-linear-gradient(top,rgb(124, 124, 124) 0%, rgb(0, 0, 0) 100%);
+ background: linear-gradient(to bottom,rgb(124, 124, 124) 0%, rgb(0, 0, 0) 100%);
+transform: rotate(3deg);
+box-shadow: 0px 0px 50px rgb(0, 0, 0), inset 0px 9px 10px rgb(206, 206, 206);
+}
+footer .container{
+ padding-top: 5px;
+ transform: rotate(-3deg);
+}
+.footer-columns div:first-child{
+ margin-top: -7%;
+ padding-bottom: 5%;
+}
+.footer-columns div:nth-child(2){
+ margin-top: -4%;
+}
+footer .copyright{
+ color: rgb(130, 130, 130);
+}
+
+
+
+
+
+
+
+.map-section .google-map {
+ height: 25rem;
+ position: relative;
+}
+.map-section .google-map iframe {
+ height: 100%;
+ width: 100%;
+}
+.map-section .google-map [data-state-details] {
+ color: #6b6763;
+ font-family: Montserrat;
+ height: 1.5em;
+ margin-top: -0.75em;
+ padding-left: 1.25rem;
+ padding-right: 1.25rem;
+ position: absolute;
+ text-align: center;
+ top: 50%;
+ width: 100%;
+}
+.map-section .google-map[data-state] {
+ background: #e9e5dc;
+}
+.map-section .google-map[data-state="loading"] [data-state-details] {
+ display: none;
+}
+
+
+
+
+.box-schedule{
+   padding: 4% 0 10% 0;
+ box-shadow: 0px 0px 50px rgb(0, 0, 0), inset 0px 5px 10px rgb(136, 187, 255);
+ background: -moz-linear-gradient(top, rgba(17,135,214,1) 0%, rgb(0, 21, 157) 100%);
+ background: -webkit-linear-gradient(top,rgba(17,135,214,1) 0%,rgb(0, 21, 157) 100%);
+ background: linear-gradient(to bottom,rgba(17,135,214,1) 0%,rgb(0, 21, 157) 100%);
+}

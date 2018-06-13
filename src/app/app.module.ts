@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { VarComponent } from './var/var.component';
+import { FooterComponent } from './footer/footer.component';
+import { MainComponent } from './var/main/main.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent }
@@ -11,7 +15,11 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent,
+    VarComponent,
+    FooterComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
