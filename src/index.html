@@ -6,16 +6,23 @@
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
   <app-root></app-root>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
+<!--
+   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+-->
   <script src="js/style.js"></script>
+  <!--
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
   <script>
-    $('#carOousel').carousel()
+
   </script>
 
 <script>
@@ -29,22 +36,6 @@
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFjL03hTLhsDxHC57aIRqjfb-7P8BG_zQ&callback=initMap"
   async defer></script>
-  <script>
-  $(window).on("scroll", function() {
-     let scrollTop = $(window).scrollTop();
-
-     if (scrollTop > 90) {
-       $("#navigation").addClass("nav-changer");
-       $("#navigation").removeClass("nav-init");
-     } else {
-       $("#navigation").addClass("nav-init");
-       $("#navigation").removeClass("nav-changer");
-     }
-
-   });
-
-
-  </script>
 
 </body>
 </html>

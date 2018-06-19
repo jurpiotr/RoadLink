@@ -1,12 +1,29 @@
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  constructor() {}
+  ngOnInit() {
+  //  $('#carOousel').carousel();
+  $(document).ready(function() {
+    $(window).on('scroll', function() {
+      const scrollTop = $(window).scrollTop();
 
-  title = 'app';
+      if (scrollTop > 90) {
+        $('#navigation').addClass('nav-changer');
+        $('#navigation').removeClass('nav-init');
+      } else {
+        $('#navigation').addClass('nav-init');
+        $('#navigation').removeClass('nav-changer');
+      }
+
+    });
+  });
+  }
 }
